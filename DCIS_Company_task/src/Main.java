@@ -20,21 +20,6 @@ public class Main {
 
         System.out.println("Total employees: " + employeeList.size());
 
-        String filterDept = "QA";
-        System.out.println("\nEmployees in department: " + filterDept);
-        for (Employee s : employeeList) {
-            if (s.getDepartment().equals(filterDept)) {
-                System.out.println(s.getName());
-            }
-        }
-
-        String filterDeptnt = "Engineering";
-        System.out.println("\nEmployees in department: " + filterDeptnt);
-        for (Employee s : employeeList) {
-            if (s.getDepartment().equals(filterDeptnt)) {
-                System.out.println(s.getName());
-            }
-        }
 
         ArrayList<Employeer> employerList = new ArrayList<>();
         employerList.add(new Employeer("Venky", "HR Manager"));
@@ -54,15 +39,39 @@ public class Main {
         }
         System.out.println("-----------------------------------------------------------");
 
+
+        String filterDept = "QA";
+        System.out.println("\nEmployees in department: " + filterDept);
+        for (Employee s : employeeList) {
+            if (s.getDepartment().equals(filterDept)) {
+                System.out.println(s.getName());
+            }
+        }
+        System.out.println("-----------------------------------------------------------");
+
+
+        String filterDeptnt = "Engineering";
+        System.out.println("\nEmployees in department: " + filterDeptnt);
+        for (Employee s : employeeList) {
+            if (s.getDepartment().equals(filterDeptnt)) {
+                System.out.println(s.getName());
+            }
+        }
+        System.out.println("-----------------------------------------------------------");
+
+
+
         System.out.println("\nEmployers:");
         for (Employeer m : employerList) {
             System.out.println(m);
         }
         System.out.println("-----------------------------------------------------------");
+        
 
         System.out.println("\nTOTAL COMPANY RESOURCES:");
         System.out.println(res);
         System.out.println("-----------------------------------------------------------");
+        
 
         System.out.println("\nRoom Details:");
         for (Rooms r : roomList) {
